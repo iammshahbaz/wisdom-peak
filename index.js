@@ -1,8 +1,10 @@
 const express = require("express");
+require('dotenv').config();
 const { developerRouter } = require("./routes/developerRoutes");
 const { projectRouter } = require("./routes/projectRoutes");
 const { towerRouter } = require("./routes/towerRoutes");
 const { seriesRouter } = require("./routes/seriesRoutes");
+
 
 const app = express();
 app.use(express.json());
