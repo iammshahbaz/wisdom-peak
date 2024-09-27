@@ -50,9 +50,9 @@ This project provides a set of CRUD (Create, Read, Update, Delete) APIs using Fi
 - **Endpoint:** `POST /projects`
 - **Description:** Adds a new project.
 - **Request Body:**
- ```json
-{
-  "projectDetails": "Luxury Apartments in Downtown",
+  ```json
+  {
+    "projectDetails": "Luxury Apartments in Downtown",
   "reraStatus": true,
   "financials": {
     "budget": 5000000,
@@ -62,7 +62,7 @@ This project provides a set of CRUD (Create, Read, Update, Delete) APIs using Fi
     "http://example.com/image1.jpg",
     "http://example.com/image2.jpg"
   ]
-}
+  }
 
 ## Read Projects
 
@@ -87,9 +87,8 @@ This project provides a set of CRUD (Create, Read, Update, Delete) APIs using Fi
 - **Endpoint:** `POST /towers`
 - **Description:** Adds a new tower.
 - **Request Body:**
-
-```json
-{
+  ```json
+  {
   "projectId": "project_id",
   "developerId": "developer_id",
   "towerNumber": 1,
@@ -106,7 +105,6 @@ This project provides a set of CRUD (Create, Read, Update, Delete) APIs using Fi
     "lobby": true,
     "terrace": true
   }
-}
 
 #### Read Towers
 
@@ -130,9 +128,8 @@ This project provides a set of CRUD (Create, Read, Update, Delete) APIs using Fi
 - **Endpoint:** `POST /series`
 - **Description:** Adds a new series to a selected tower.
 - **Request Body:**
-
-```json
-{
+  ```json
+  {
   "seriesName": "2 BHK Deluxe",
   "towerId": "tower_id",
   "seriesTypology": "2 BHK",
@@ -143,7 +140,8 @@ This project provides a set of CRUD (Create, Read, Update, Delete) APIs using Fi
     "direction": "East"
   },
   "addOns": ["Utility", "Terrace"]
-}
+  }
+
 
 #### Read Series
 
