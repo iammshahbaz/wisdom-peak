@@ -63,6 +63,7 @@ This project provides a set of CRUD (Create, Read, Update, Delete) APIs using Fi
     "http://example.com/image2.jpg"
   ]
   }
+  }
 
 ## Read Projects
 
@@ -84,7 +85,7 @@ This project provides a set of CRUD (Create, Read, Update, Delete) APIs using Fi
 
 #### Create Tower
 
-- **Endpoint:** `POST /towers`
+- **Endpoint:** `POST /tower`
 - **Description:** Adds a new tower.
 - **Request Body:**
   ```json
@@ -108,17 +109,17 @@ This project provides a set of CRUD (Create, Read, Update, Delete) APIs using Fi
 
 #### Read Towers
 
-- **Endpoint:** `GET /towers`
+- **Endpoint:** `GET /tower`
 - **Description:** Retrieves the list of all towers.
 
 #### Update Tower
 
-- **Endpoint:** `PATCH /towers/:id`
+- **Endpoint:** `PATCH /tower/:id`
 - **Description:** Updates an existing tower’s details.
 
 #### Delete Tower
 
-- **Endpoint:** `DELETE /towers/:id`
+- **Endpoint:** `DELETE /tower/:id`
 - **Description:** Deletes a tower from Firestore.
 
 ### Series Management API
