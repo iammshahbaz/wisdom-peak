@@ -9,6 +9,10 @@ const { seriesRouter } = require("./routes/seriesRoutes");
 const app = express();
 app.use(express.json());
 
+app.get("/",async(req,res)=>{
+    res.send({msg:"Welcome to Homepage"})
+})
+
 app.use("/developers",developerRouter)
 app.use("/projects",projectRouter)
 app.use("/tower",towerRouter)

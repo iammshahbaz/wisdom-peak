@@ -11,7 +11,7 @@ towerRouter.post("/",async(req,res)=>{
         const newtower = await towerCollection.add(towerData);
         res.send({id:newtower.id , ...newtower})
     } catch (error) {
-       res.send(error) 
+       res.send(error)
     }
 })
 
