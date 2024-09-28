@@ -1,5 +1,6 @@
 const express = require("express")
 const db = require('../firebaseConfig');
+const projectCollection = require("../model/projectModel");
 const projectRouter = express.Router();
 
 //create
@@ -8,7 +9,8 @@ projectRouter.post("/",async(req,res)=>{
     try {
         const projectData = req.body;
         const newproject = await projectCollection.add(projectData);
-        res.send({id:newproject.id , ...newproject})
+        res.send({id: newproject.id , ...newproject});
+
     } catch (error) {
        res.send(error) 
     }

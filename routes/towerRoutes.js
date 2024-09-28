@@ -1,5 +1,6 @@
 const express = require("express")
 const db = require('../firebaseConfig');
+const towerCollection = require("../model/towerModel");
 const towerRouter = express.Router();
 
 //create
