@@ -63,7 +63,7 @@ This project provides a set of CRUD (Create, Read, Update, Delete) APIs using Fi
     "http://example.com/image2.jpg"
   ]
   }
-  }
+  
 
 ## Read Projects
 
@@ -105,6 +105,7 @@ This project provides a set of CRUD (Create, Read, Update, Delete) APIs using Fi
     "parkingLevels": 2,
     "lobby": true,
     "terrace": true
+  }
   }
 
 #### Read Towers
